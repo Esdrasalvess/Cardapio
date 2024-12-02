@@ -1,0 +1,48 @@
+/* Centraliza tudo no meio da página */
+.container {
+  display: flex;
+  flex-direction: column; /* Coloca o título e os cards em coluna */
+  align-items: center; /* Centraliza no eixo horizontal */
+  justify-content: center; /* Centraliza no eixo vertical */
+  height: 100vh; /* Garante que ocupe 100% da altura da página */
+  padding: 16px; /* Espaçamento interno */
+  text-align: center; /* Alinha o texto no centro */
+  margin-left: 700px;
+}
+
+/* Grade dos cards com 3 itens por linha, centralizada */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Exibe 3 itens por linha */
+  gap: 16px; /* Espaçamento entre os cards */
+  max-width: 900px; /* Define uma largura máxima */
+  width: 100%; /* Garante que ocupa toda a largura disponível */
+  margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+/* Título */
+h1 {
+  font-size: 2.5rem; /* Tamanho do título */
+  color: white; /* Ajuste conforme o design */
+  margin: 0; /* Remove margens extras */
+}
+
+/* Botão fixo no canto inferior */
+.container button {
+  background-color: #0275d8;
+  color: white;
+  font-weight: bold;
+  position: fixed; /* Fixa o botão no canto inferior */
+  bottom: 16px;
+  right: 24px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.container button:hover {
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
+  transform: scale(1.1);
+}
